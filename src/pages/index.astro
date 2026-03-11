@@ -1,5 +1,6 @@
 ---
-
+import "../styles/global.css";
+import Hero from "../components/Hero.astro";
 ---
 
 <html lang="en">
@@ -9,9 +10,24 @@
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>SweetFun Design System</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body
+		class="antialiased text-magazine-text font-sans selection:bg-vibrant-pink selection:text-white"
+	>
+		<main>
+			<Hero />
+		</main>
 	</body>
 </html>

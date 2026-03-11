@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pastel-pink: #fef2f7;
+  --color-pastel-blue: #f0f7ff;
+  --color-pastel-yellow: #fffdf2;
+  --color-vibrant-pink: #f4258c;
+  --color-vibrant-blue: #3b82f6;
+  --color-vibrant-yellow: #facc15;
+  --color-magazine-text: #2d3436;
+
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+}
+
+:root {
+  --pastel-pink: #fef2f7;
+  --pastel-blue: #f0f7ff;
+  --pastel-yellow: #fffdf2;
+  --vibrant-pink: #f4258c;
+  --vibrant-blue: #3b82f6;
+  --vibrant-yellow: #facc15;
+  --magazine-text: #2d3436;
+}
