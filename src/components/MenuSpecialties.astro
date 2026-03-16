@@ -9,64 +9,70 @@ import cakeImage from "../assets/cake.png";
     aria-labelledby="menu-heading"
 >
     <div class="container mx-auto px-6 lg:px-12">
-        <!-- Header area -->
-        <div class="relative mb-12 md:mb-16">
-            <!-- "MENU" watermark -->
-            <span class="absolute -top-6 md:-top-12 left-0 text-7xl md:text-9xl font-extrabold text-slate-200/50 mix-blend-multiply select-none z-0 tracking-widest uppercase pointer-events-none">
-                Menu
-            </span>
-            <!-- Heading -->
-            <div class="relative z-10 pl-1 md:pl-2">
-                <h2 id="menu-heading" class="text-4xl md:text-5xl font-extrabold text-magazine-text inline-block tracking-tight">
-                    Nuestras Especialidades
-                    <!-- Yellow underline -->
-                    <div class="h-1.5 w-24 bg-vibrant-yellow mt-3 rounded-full"></div>
-                </h2>
+        <div class="max-w-6xl mx-auto w-full">
+            <!-- Header area -->
+            <div class="relative mb-12 md:mb-16">
+                <!-- "MENU" watermark -->
+                <span class="absolute -top-6 md:-top-12 left-0 text-7xl md:text-9xl font-extrabold text-slate-200/50 mix-blend-multiply select-none z-0 tracking-widest uppercase pointer-events-none">
+                    Menu
+                </span>
+                <!-- Heading -->
+                <div class="relative z-10 pl-1 md:pl-2">
+                    <h2 id="menu-heading" class="text-4xl md:text-5xl font-extrabold text-magazine-text inline-block tracking-tight">
+                        Nuestras Especialidades
+                        <!-- Yellow underline -->
+                        <div class="h-1.5 w-24 bg-vibrant-yellow mt-3 rounded-full"></div>
+                    </h2>
+                </div>
             </div>
-        </div>
 
-        <!-- Cards grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 xl:gap-14 relative z-10 w-full max-w-6xl">
-            <!-- Card 1 -->
-            <div class="bg-white rounded-[2.5rem] p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow duration-300 border border-pink-50/50">
-                <div class="relative aspect-[4/2.8] rounded-[2rem] mb-8 overflow-hidden shadow-inner border-2 border-white/20 bg-slate-100">
-                    <Image src={cookiesImage} alt="Galletas decoradas" class="w-full h-full object-cover" width={600} height={420} />
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
-                    <div class="absolute top-5 left-5 bg-white text-vibrant-pink text-[11px] font-bold px-4 py-1.5 rounded-full z-10 tracking-[0.15em] uppercase shadow-sm">
-                        Most Loved
+            <!-- Cards grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 xl:gap-14 relative z-10">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-[2.5rem] p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow duration-300 border border-pink-50/50 flex flex-col">
+                    <div class="relative aspect-[4/2.8] rounded-[2rem] mb-8 overflow-hidden shadow-inner border-2 border-white/20 bg-slate-100">
+                        <Image src={cookiesImage} alt="Galletas decoradas" class="w-full h-full object-cover" width={600} height={420} />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                        <div class="absolute top-5 left-5 bg-white text-vibrant-pink text-[11px] font-bold px-4 py-1.5 rounded-full z-10 tracking-[0.15em] uppercase shadow-sm">
+                            Most Loved
+                        </div>
+                    </div>
+                    <div class="px-2 flex flex-col flex-grow">
+                        <h3 class="text-[28px] md:text-3xl font-extrabold text-magazine-text mb-4 tracking-tight">Galletas Decoradas</h3>
+                        <p class="text-slate-500 text-[15px] leading-relaxed mb-8">
+                            Diseños increíbles que cobran vida. Desde el adorable Baby Yoda
+                            hasta naves espaciales, nuestras galletas de mantequilla son
+                            pequeñas obras de arte.
+                        </p>
+                        <div class="mt-auto">
+                            <a href="#" class="inline-flex items-center text-vibrant-pink font-bold text-sm tracking-wide hover:text-pink-600 transition-colors group">
+                                <span class="border-b-[1.5px] border-vibrant-pink/30 group-hover:border-vibrant-pink pb-0.5 transition-colors">Saber más</span>
+                                <span class="material-symbols-outlined ml-1.5 text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="px-2">
-                    <h3 class="text-[28px] md:text-3xl font-extrabold text-magazine-text mb-4 tracking-tight">Galletas Decoradas</h3>
-                    <p class="text-slate-500 text-[15px] leading-relaxed mb-8 max-w-sm">
-                        Diseños increíbles que cobran vida. Desde el adorable Baby Yoda
-                        hasta naves espaciales, nuestras galletas de mantequilla son
-                        pequeñas obras de arte.
-                    </p>
-                    <a href="#" class="inline-flex items-center text-vibrant-pink font-bold text-sm tracking-wide hover:text-pink-600 transition-colors group">
-                        <span class="border-b-[1.5px] border-vibrant-pink/30 group-hover:border-vibrant-pink pb-0.5 transition-colors">Saber más</span>
-                        <span class="material-symbols-outlined ml-1.5 text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
-                    </a>
-                </div>
-            </div>
 
-            <!-- Card 2 -->
-            <div class="bg-white rounded-[2.5rem] p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow duration-300 border border-pink-50/50">
-                <div class="relative aspect-[4/2.8] rounded-[2rem] mb-8 overflow-hidden shadow-inner border-2 border-white/20 bg-slate-100">
-                    <Image src={cakeImage} alt="Pasteles temáticos" class="w-full h-full object-cover" width={600} height={420} />
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
-                </div>
-                <div class="px-2">
-                    <h3 class="text-[28px] md:text-3xl font-extrabold text-magazine-text mb-4 tracking-tight">Pasteles Temáticos</h3>
-                    <p class="text-slate-500 text-[15px] leading-relaxed mb-8 max-w-sm">
-                        Tus héroes favoritos de Marvel y DC Comics en un
-                        pastel delicioso. Capas de sabor que harán que
-                        tu fiesta sea legendaria.
-                    </p>
-                    <a href="#" class="inline-flex items-center text-vibrant-blue font-bold text-sm tracking-wide hover:text-blue-600 transition-colors group">
-                        <span class="border-b-[1.5px] border-vibrant-blue/30 group-hover:border-vibrant-blue pb-0.5 transition-colors">Saber más</span>
-                        <span class="material-symbols-outlined ml-1.5 text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
-                    </a>
+                <!-- Card 2 -->
+                <div class="bg-white rounded-[2.5rem] p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow duration-300 border border-pink-50/50 flex flex-col">
+                    <div class="relative aspect-[4/2.8] rounded-[2rem] mb-8 overflow-hidden shadow-inner border-2 border-white/20 bg-slate-100">
+                        <Image src={cakeImage} alt="Pasteles temáticos" class="w-full h-full object-cover" width={600} height={420} />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                    </div>
+                    <div class="px-2 flex flex-col flex-grow">
+                        <h3 class="text-[28px] md:text-3xl font-extrabold text-magazine-text mb-4 tracking-tight">Pasteles Temáticos</h3>
+                        <p class="text-slate-500 text-[15px] leading-relaxed mb-8">
+                            Tus héroes favoritos de Marvel y DC Comics en un
+                            pastel delicioso. Capas de sabor que harán que
+                            tu fiesta sea legendaria.
+                        </p>
+                        <div class="mt-auto">
+                            <a href="#" class="inline-flex items-center text-vibrant-blue font-bold text-sm tracking-wide hover:text-blue-600 transition-colors group">
+                                <span class="border-b-[1.5px] border-vibrant-blue/30 group-hover:border-vibrant-blue pb-0.5 transition-colors">Saber más</span>
+                                <span class="material-symbols-outlined ml-1.5 text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
