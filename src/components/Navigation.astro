@@ -1,5 +1,7 @@
 ---
+import WhatsappIcon from "./WhatsappIcon.astro";
 ---
+
 <header
   id="main-navigation"
   class="fixed top-0 left-0 right-0 z-50 transition-colors duration-300 bg-transparent py-4 text-magazine-text"
@@ -8,9 +10,12 @@
     <div class="flex items-center justify-between">
       {/* Logo */}
       <div class="flex-shrink-0">
-        <a href="#" class="block focus:outline-none focus-visible:ring-2 focus-visible:ring-vibrant-pink rounded-md">
+        <a
+          href="#"
+          class="block focus:outline-none focus-visible:ring-2 focus-visible:ring-vibrant-pink rounded-md"
+        >
           <img
-            src="/sweetfun-logo.jpeg"
+            src="/logo.png"
             alt="SweetFun Logo"
             class="h-10 w-auto md:h-12 object-contain rounded-sm"
             width="100"
@@ -20,11 +25,30 @@
       </div>
 
       {/* Desktop Navigation */}
-      <nav class="hidden md:flex items-center space-x-4 lg:space-x-8" aria-label="Main Navigation">
-        <a href="#hero" class="text-xs lg:text-sm font-bold tracking-wider hover:text-vibrant-pink transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-vibrant-pink rounded-sm px-1 py-0.5">HOME</a>
-        <a href="#menu-heading" class="text-xs lg:text-sm font-bold tracking-wider hover:text-vibrant-pink transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-vibrant-pink rounded-sm px-1 py-0.5">OUR SWEETS</a>
-        <a href="#how-to-order" class="text-xs lg:text-sm font-bold tracking-wider hover:text-vibrant-pink transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-vibrant-pink rounded-sm px-1 py-0.5">HOW TO ORDER</a>
-        <a href="#contact" class="text-xs lg:text-sm font-bold tracking-wider hover:text-vibrant-pink transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-vibrant-pink rounded-sm px-1 py-0.5">CONTACT</a>
+      <nav
+        class="hidden md:flex items-center space-x-4 lg:space-x-8"
+        aria-label="Main Navigation"
+      >
+        <a
+          href="#"
+          class="text-xs lg:text-sm font-bold tracking-wider uppercase hover:text-vibrant-pink transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-vibrant-pink rounded-sm px-1 py-0.5"
+          >Inicio</a
+        >
+        <a
+          href="#about-us"
+          class="text-xs lg:text-sm font-bold tracking-wider uppercase hover:text-vibrant-pink transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-vibrant-pink rounded-sm px-1 py-0.5"
+          >Sobre nosotros</a
+        >
+        <a
+          href="#gallery"
+          class="text-xs lg:text-sm font-bold tracking-wider uppercase hover:text-vibrant-pink transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-vibrant-pink rounded-sm px-1 py-0.5"
+          >Galeria</a
+        >
+        <a
+          href="#contact"
+          class="text-xs lg:text-sm font-bold tracking-wider uppercase hover:text-vibrant-pink transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-vibrant-pink rounded-sm px-1 py-0.5"
+          >Contacto</a
+        >
       </nav>
 
       {/* Desktop WhatsApp Button */}
@@ -34,7 +58,7 @@
           class="inline-flex items-center justify-center px-4 py-2 lg:px-6 lg:py-2.5 text-xs lg:text-sm font-bold tracking-wide text-white bg-vibrant-pink rounded-full hover:bg-pink-600 transition-colors shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-vibrant-pink"
           aria-label="Contact us on WhatsApp"
         >
-          <span class="material-symbols-outlined mr-1 lg:mr-2 text-base lg:text-lg" aria-hidden="true">chat</span>
+          <WhatsappIcon class="w-4 h-4 lg:w-5 lg:h-5 mr-1 lg:mr-2" />
           WHATSAPP
         </a>
       </div>
@@ -58,7 +82,11 @@
             stroke="currentColor"
             aria-hidden="true"
           >
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
           {/* Close Icon (hidden initially) */}
           <svg
@@ -69,7 +97,11 @@
             stroke="currentColor"
             aria-hidden="true"
           >
-             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"></path>
           </svg>
         </button>
       </div>
@@ -85,112 +117,143 @@
   >
     <div class="px-4 pt-20 pb-6 flex-1 overflow-y-auto">
       <nav class="flex flex-col space-y-4" aria-label="Mobile Navigation">
-        <a href="#hero" class="mobile-link text-lg font-bold tracking-wider text-magazine-text hover:text-vibrant-pink px-3 py-2 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-vibrant-pink">HOME</a>
-        <a href="#menu-heading" class="mobile-link text-lg font-bold tracking-wider text-magazine-text hover:text-vibrant-pink px-3 py-2 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-vibrant-pink">OUR SWEETS</a>
-        <a href="#how-to-order" class="mobile-link text-lg font-bold tracking-wider text-magazine-text hover:text-vibrant-pink px-3 py-2 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-vibrant-pink">HOW TO ORDER</a>
-        <a href="#contact" class="mobile-link text-lg font-bold tracking-wider text-magazine-text hover:text-vibrant-pink px-3 py-2 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-vibrant-pink">CONTACT</a>
+        <a
+          href="#"
+          class="mobile-link text-lg uppercase font-bold tracking-wider text-magazine-text hover:text-vibrant-pink px-3 py-2 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-vibrant-pink"
+          >Inicio</a
+        >
+        <a
+          href="#about-us"
+          class="mobile-link text-lg uppercase font-bold tracking-wider text-magazine-text hover:text-vibrant-pink px-3 py-2 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-vibrant-pink"
+          >Sobre Nosotros</a
+        >
+        <a
+          href="#gallery"
+          class="mobile-link text-lg uppercase font-bold tracking-wider text-magazine-text hover:text-vibrant-pink px-3 py-2 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-vibrant-pink"
+          >Galería</a
+        >
+        <a
+          href="#contact"
+          class="mobile-link text-lg uppercase font-bold tracking-wider text-magazine-text hover:text-vibrant-pink px-3 py-2 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-vibrant-pink"
+          >Contacto</a
+        >
       </nav>
       <div class="mt-8 px-3">
-         <a
-            href="#"
-            class="mobile-link flex items-center justify-center w-full px-6 py-3 text-base font-bold tracking-wide text-white bg-vibrant-pink rounded-full hover:bg-pink-600 transition-colors shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-vibrant-pink"
-            aria-label="Contact us on WhatsApp"
-          >
-            <span class="material-symbols-outlined mr-2 text-xl" aria-hidden="true">chat</span>
-            WHATSAPP
-          </a>
+        <a
+          href="#"
+          class="mobile-link flex items-center justify-center w-full px-6 py-3 text-base font-bold tracking-wide text-white bg-vibrant-pink rounded-full hover:bg-pink-600 transition-colors shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-vibrant-pink"
+          aria-label="Contact us on WhatsApp"
+        >
+          <WhatsappIcon class="w-5 h-5 mr-2" />
+          WHATSAPP
+        </a>
       </div>
     </div>
   </div>
 
   {/* Overlay for mobile menu */}
-  <div id="mobile-menu-overlay" class="fixed inset-0 bg-black/20 backdrop-blur-sm z-30 hidden opacity-0 transition-opacity duration-300" aria-hidden="true"></div>
-
+  <div
+    id="mobile-menu-overlay"
+    class="fixed inset-0 bg-black/20 backdrop-blur-sm z-30 hidden opacity-0 transition-opacity duration-300"
+    aria-hidden="true"
+  >
+  </div>
 </header>
 
 <script>
   // Handle Sticky Header Background
-  const header = document.getElementById('main-navigation');
-  
+  const header = document.getElementById("main-navigation");
+
   const handleScroll = () => {
     if (window.scrollY > 20) {
       // User scrolled down
-      header?.classList.remove('bg-transparent', 'py-4');
-      header?.classList.add('bg-white', 'md:bg-white/95', 'backdrop-blur-md', 'shadow-sm', 'py-2');
+      header?.classList.remove("bg-transparent", "py-4");
+      header?.classList.add(
+        "bg-white",
+        "md:bg-white/95",
+        "backdrop-blur-md",
+        "shadow-sm",
+        "py-2"
+      );
     } else {
       // User is at the top
-      header?.classList.add('bg-transparent', 'py-4');
-      header?.classList.remove('bg-white', 'md:bg-white/95', 'backdrop-blur-md', 'shadow-sm', 'py-2');
+      header?.classList.add("bg-transparent", "py-4");
+      header?.classList.remove(
+        "bg-white",
+        "md:bg-white/95",
+        "backdrop-blur-md",
+        "shadow-sm",
+        "py-2"
+      );
     }
   };
 
   // Run on mount in case the page is already scrolled
   handleScroll();
-  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener("scroll", handleScroll, { passive: true });
 
   // Handle Mobile Menu Toggle
-  const menuButton = document.getElementById('mobile-menu-button');
-  const mobileMenu = document.getElementById('mobile-menu');
-  const overlay = document.getElementById('mobile-menu-overlay');
-  const menuIcon = menuButton?.querySelector('.menu-icon');
-  const closeIcon = menuButton?.querySelector('.close-icon');
-  const mobileLinks = document.querySelectorAll('.mobile-link');
+  const menuButton = document.getElementById("mobile-menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const overlay = document.getElementById("mobile-menu-overlay");
+  const menuIcon = menuButton?.querySelector(".menu-icon");
+  const closeIcon = menuButton?.querySelector(".close-icon");
+  const mobileLinks = document.querySelectorAll(".mobile-link");
   let isMenuOpen = false;
 
   const toggleMenu = () => {
     isMenuOpen = !isMenuOpen;
-    
+
     if (isMenuOpen) {
       // Open menu
-      mobileMenu?.classList.remove('translate-x-full');
-      mobileMenu?.classList.add('translate-x-0');
-      mobileMenu?.setAttribute('aria-hidden', 'false');
-      
-      overlay?.classList.remove('hidden');
+      mobileMenu?.classList.remove("translate-x-full");
+      mobileMenu?.classList.add("translate-x-0");
+      mobileMenu?.setAttribute("aria-hidden", "false");
+
+      overlay?.classList.remove("hidden");
       // small delay for opacity transition to work
       requestAnimationFrame(() => {
-        overlay?.classList.remove('opacity-0');
-        overlay?.classList.add('opacity-100');
+        overlay?.classList.remove("opacity-0");
+        overlay?.classList.add("opacity-100");
       });
 
-      menuButton?.setAttribute('aria-expanded', 'true');
-      menuIcon?.classList.add('hidden');
-      closeIcon?.classList.remove('hidden');
-      closeIcon?.classList.add('block');
-      
+      menuButton?.setAttribute("aria-expanded", "true");
+      menuIcon?.classList.add("hidden");
+      closeIcon?.classList.remove("hidden");
+      closeIcon?.classList.add("block");
+
       // Prevent scrolling on body
-      document.body.style.overflow = 'hidden';
-      
+      document.body.style.overflow = "hidden";
     } else {
       // Close menu
-      mobileMenu?.classList.remove('translate-x-0');
-      mobileMenu?.classList.add('translate-x-full');
-      mobileMenu?.setAttribute('aria-hidden', 'true');
-      
-      overlay?.classList.remove('opacity-100');
-      overlay?.classList.add('opacity-0');
+      mobileMenu?.classList.remove("translate-x-0");
+      mobileMenu?.classList.add("translate-x-full");
+      mobileMenu?.setAttribute("aria-hidden", "true");
+
+      overlay?.classList.remove("opacity-100");
+      overlay?.classList.add("opacity-0");
       // Wait for transition before hiding
       setTimeout(() => {
-        overlay?.classList.add('hidden');
+        overlay?.classList.add("hidden");
       }, 300);
 
-      menuButton?.setAttribute('aria-expanded', 'false');
-      menuIcon?.classList.remove('hidden');
-      menuIcon?.classList.add('block');
-      closeIcon?.classList.add('hidden');
-      closeIcon?.classList.remove('block');
-      
+      menuButton?.setAttribute("aria-expanded", "false");
+      menuIcon?.classList.remove("hidden");
+      menuIcon?.classList.add("block");
+      closeIcon?.classList.add("hidden");
+      closeIcon?.classList.remove("block");
+
       // Restore scrolling on body
-      document.body.style.overflow = '';
+      document.body.style.overflow = "";
     }
   };
 
-  menuButton?.addEventListener('click', toggleMenu);
-  overlay?.addEventListener('click', toggleMenu);
+  menuButton?.addEventListener("click", toggleMenu);
+  overlay?.addEventListener("click", toggleMenu);
 
   // Close menu when a link is clicked
-  mobileLinks.forEach(link => {
-    link.addEventListener('click', () => {
+  mobileLinks.forEach((link) => {
+    link.addEventListener("click", () => {
       if (isMenuOpen) {
         toggleMenu();
       }
@@ -198,44 +261,50 @@
   });
 
   // Handle window resize to close menu on desktop views
-  window.addEventListener('resize', () => {
+  window.addEventListener("resize", () => {
     if (window.innerWidth >= 768 && isMenuOpen) {
       toggleMenu();
     }
   });
 
   // Focus Trapping for Mobile Menu
-  const focusableElements = 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
+  const focusableElements =
+    'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
   let firstFocusableElement: HTMLElement | null = null;
   let lastFocusableElement: HTMLElement | null = null;
 
   const updateFocusableElements = () => {
     if (!mobileMenu) return;
-    const focusableContent = mobileMenu.querySelectorAll<HTMLElement>(focusableElements);
+    const focusableContent =
+      mobileMenu.querySelectorAll<HTMLElement>(focusableElements);
     if (focusableContent.length === 0) return;
     // Add close button (which is menuButton toggling to close) to the focus cycle
-    const allFocusable = [menuButton, ...Array.from(focusableContent)].filter(Boolean) as HTMLElement[];
+    const allFocusable = [menuButton, ...Array.from(focusableContent)].filter(
+      Boolean
+    ) as HTMLElement[];
     firstFocusableElement = allFocusable[0];
     lastFocusableElement = allFocusable[allFocusable.length - 1];
   };
 
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && isMenuOpen) {
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && isMenuOpen) {
       toggleMenu();
       menuButton?.focus();
     }
 
-    if (e.key === 'Tab' && isMenuOpen) {
+    if (e.key === "Tab" && isMenuOpen) {
       updateFocusableElements();
-      
+
       if (!firstFocusableElement || !lastFocusableElement) return;
 
-      if (e.shiftKey) { // if shift key pressed for shift + tab combination
+      if (e.shiftKey) {
+        // if shift key pressed for shift + tab combination
         if (document.activeElement === firstFocusableElement) {
           lastFocusableElement.focus();
           e.preventDefault();
         }
-      } else { // if tab key is pressed
+      } else {
+        // if tab key is pressed
         if (document.activeElement === lastFocusableElement) {
           firstFocusableElement.focus();
           e.preventDefault();
