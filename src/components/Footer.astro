@@ -1,11 +1,13 @@
 ---
 import WhatsappIcon from "./WhatsappIcon.astro";
+
+const currentYear = new Date().getFullYear();
 ---
 
-<footer class="bg-white py-12 md:py-16 mt-auto">
+<footer class="bg-pastel-blue py-12 md:py-16 mt-auto">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-      {/* Left Column */}
+      {/* Left Column – Brand */}
       <div class="flex flex-col space-y-6">
         <div class="flex items-center space-x-3">
           <img
@@ -65,7 +67,7 @@ import WhatsappIcon from "./WhatsappIcon.astro";
         </div>
       </div>
 
-      {/* Right Column (Event Card) */}
+      {/* Right Column – Event Card */}
       <div
         class="bg-gradient-to-br from-pastel-yellow to-white/50 rounded-3xl p-6 md:p-8 lg:p-10 flex flex-col items-start space-y-4"
       >
@@ -81,7 +83,7 @@ import WhatsappIcon from "./WhatsappIcon.astro";
         <div class="pt-4">
           <a
             href="#"
-            class="inline-flex items-center justify-center px-6 py-3 text-sm md:text-base font-bold text-white bg-vibrant-pink rounded-full hover:bg-pink-600 transition-colors shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-vibrant-pink"
+            class="inline-flex items-center justify-center w-fit whitespace-nowrap px-5 py-3 text-sm lg:text-base font-bold text-white bg-vibrant-pink rounded-full hover:bg-pink-600 transition-colors shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-vibrant-pink"
             aria-label="Contáctanos por WhatsApp"
           >
             <WhatsappIcon class="w-5 h-5 mr-2" />
@@ -96,7 +98,7 @@ import WhatsappIcon from "./WhatsappIcon.astro";
       class="mt-12 md:mt-16 pt-8 border-t border-gray-100 flex flex-col-reverse md:flex-row md:items-center justify-between gap-4"
     >
       <p class="text-xs font-semibold tracking-widest text-gray-400 uppercase">
-        © 2025 SWEETFUN. HECHO CON AMOR POR UNA REPOSTERA APASIONADA.
+        © {currentYear} SWEETFUN. HECHO CON AMOR POR UNA REPOSTERA APASIONADA.
       </p>
     </div>
   </div>
