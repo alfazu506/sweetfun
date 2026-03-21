@@ -1,5 +1,6 @@
 ---
 // src/components/AboutUs.astro
+import { Image } from "astro:assets";
 ---
 
 <section class="max-w-7xl mx-auto px-6 py-24" id="about-us">
@@ -12,20 +13,24 @@
       <div
         class="absolute inset-0 right-12 bottom-12 rounded-[3.5rem] overflow-hidden shadow-xl"
       >
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?q=80&w=1400&auto=format&fit=crop"
           alt="Decorando galletas con glaseado"
           class="w-full h-full object-cover"
+          loading="eager"
+          inferSize
         />
       </div>
       <!-- Secondary Overlapping Image -->
       <div
         class="absolute bottom-0 right-0 w-64 h-64 rounded-[3.5rem] overflow-hidden border-8 border-white shadow-2xl bg-gray-100"
       >
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=800&auto=format&fit=crop"
           alt="Pastel artesanal"
           class="w-full h-full object-cover"
+          loading="eager"
+          inferSize
         />
       </div>
     </div>
@@ -34,10 +39,12 @@
     <div
       class="md:hidden w-full h-72 rounded-[3.5rem] overflow-hidden shadow-lg mb-4"
     >
-      <img
+      <Image
         src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?q=80&w=1400&auto=format&fit=crop"
         alt="Decorando galletas"
         class="w-full h-full object-cover"
+        loading="eager"
+        inferSize
       />
     </div>
 

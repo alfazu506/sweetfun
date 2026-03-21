@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+import logoImage from "../assets/logo.png";
 import WhatsappIcon from "./WhatsappIcon.astro";
 ---
 
@@ -14,12 +16,13 @@ import WhatsappIcon from "./WhatsappIcon.astro";
           href="#"
           class="block focus:outline-none focus-visible:ring-2 focus-visible:ring-vibrant-pink rounded-md"
         >
-          <img
-            src="/logo.png"
+          <Image
+            src={logoImage}
             alt="SweetFun Logo"
             class="h-10 w-auto md:h-12 object-contain rounded-sm"
-            width="100"
-            height="48"
+            width={105}
+            height={48}
+            loading="eager"
           />
         </a>
       </div>
@@ -44,11 +47,7 @@ import WhatsappIcon from "./WhatsappIcon.astro";
           class="text-xs lg:text-sm font-bold tracking-wider uppercase hover:text-vibrant-pink transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-vibrant-pink rounded-sm px-1 py-0.5"
           >Galeria</a
         >
-        <a
-          href="#contact"
-          class="text-xs lg:text-sm font-bold tracking-wider uppercase hover:text-vibrant-pink transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-vibrant-pink rounded-sm px-1 py-0.5"
-          >Contacto</a
-        >
+
       </nav>
 
       {/* Desktop WhatsApp Button */}
@@ -132,11 +131,7 @@ import WhatsappIcon from "./WhatsappIcon.astro";
           class="mobile-link text-lg uppercase font-bold tracking-wider text-magazine-text hover:text-vibrant-pink px-3 py-2 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-vibrant-pink"
           >Galería</a
         >
-        <a
-          href="#contact"
-          class="mobile-link text-lg uppercase font-bold tracking-wider text-magazine-text hover:text-vibrant-pink px-3 py-2 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-vibrant-pink"
-          >Contacto</a
-        >
+
       </nav>
       <div class="mt-8 px-3">
         <a

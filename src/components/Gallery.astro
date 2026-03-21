@@ -1,46 +1,63 @@
 ---
 // src/components/Gallery.astro
+import { Image } from "astro:assets";
 
 const images = [
   {
     src: "https://images.unsplash.com/photo-1550617931-e17a7b70dce2?q=80&w=600&auto=format&fit=crop",
     alt: "Galletas decoradas",
     className: "aspect-[4/3]",
+    width: 600,
+    height: 450,
   },
   {
     src: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=600&auto=format&fit=crop",
     alt: "Pastel artesanal",
     className: "aspect-[3/4]",
+    width: 600,
+    height: 800,
   },
   {
     src: "https://images.unsplash.com/photo-1621236378699-8597faf6a176?q=80&w=600&auto=format&fit=crop",
     alt: "Postres deliciosos",
     className: "aspect-[1/1]",
+    width: 600,
+    height: 600,
   },
   {
     src: "https://images.unsplash.com/photo-1542826438-bd32f43d626f?q=80&w=600&auto=format&fit=crop",
     alt: "Cupcakes dulces",
     className: "aspect-[4/5]",
+    width: 600,
+    height: 750,
   },
   {
     src: "https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=600&auto=format&fit=crop",
     alt: "Tarta de frutas",
     className: "aspect-[3/2]",
+    width: 600,
+    height: 400,
   },
   {
     src: "https://images.unsplash.com/photo-1535141192574-5d4897c12636?q=80&w=600&auto=format&fit=crop",
     alt: "Dulces variados",
     className: "aspect-[2/3]",
+    width: 600,
+    height: 900,
   },
   {
     src: "https://images.unsplash.com/photo-1612203985729-70726954388c?q=80&w=600&auto=format&fit=crop",
     alt: "Macarons",
     className: "aspect-[1/1]",
+    width: 600,
+    height: 600,
   },
   {
     src: "https://images.unsplash.com/photo-1514517521153-1be72277b32f?q=80&w=600&auto=format&fit=crop",
     alt: "Chocolate",
     className: "aspect-[4/3]",
+    width: 600,
+    height: 450,
   },
 ];
 ---
@@ -63,10 +80,12 @@ const images = [
       images.map((img) => (
         <div class="break-inside-avoid relative shadow-sm hover:shadow-xl transition-shadow duration-300 rounded-[2rem] overflow-hidden group">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 z-10 w-full h-full pointer-events-none" />
-          <img
+          <Image
             src={img.src}
             alt={img.alt}
             class={`w-full object-cover transition-transform duration-500 group-hover:scale-105 ${img.className}`}
+            width={img.width}
+            height={img.height}
             loading="lazy"
           />
         </div>
